@@ -1,0 +1,247 @@
+/* ==== CONTENTS ==== */
+/* 
+    1. SHARED
+
+
+*/
+
+/* ==== 1. SHARED ==== */
+:root {
+    --text-primary: #2b2b2b;
+    --text-secondary: #425466;
+    --red: #ea5353;
+    --cyan: #45d3d3;
+    --green: #45d366;
+    --orange: #fcaf4a;
+    --blue: #2466e5;
+    --gradient: linear-gradient(45deg, #2466e5, #44e7ec, #549ef2);
+}
+html,
+body {
+    min-height: 100vh;
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+p > a {
+    color: var(--blue);
+}
+section {
+    padding: 0 36px;
+}
+
+/* ==== 2. HEADER ==== */
+#header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 76px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 36px;
+}
+/* ==== 2. Hero ==== */
+.gradient {
+    width: 100%;
+    background-size: 300%;
+    background-image: var(--gradient);
+    animation: gradient-animation 7s infinite alternate;
+    padding-bottom: 16px;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
+}
+#hero {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+#hero h1 {
+    margin: 0;
+    font-size: 50px;
+    line-height: 58px;
+    letter-spacing: -4px;
+}
+
+#hero p {
+    font-size: 1.1rem;
+    margin: 30px 0;
+    font-weight: 500;
+}
+
+#hero .projects-button {
+    background-color: var(--text-primary);
+    padding: 4px 12px 6px 16px;
+    border-radius: 16px;
+    color: #fff;
+    margin-right: 16px;
+}
+
+#hero .contact-button {
+    color: #fff;
+}
+
+/* ==== TECHNOLOGIES ==== */
+#tech {
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+#tech h1 {
+    margin-top: 0;
+    font-size: 1rem;
+    color: gray;
+    font-weight: 500;
+}
+#tech img {
+    height: 60px;
+    margin-right: 16px;
+}
+#tech ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* ==== PROJECTS ==== */
+#projects h1 {
+    margin-top: 0;
+    font-size: 1rem;
+    color: gray;
+    font-weight: 500;
+}
+#projects .card {
+    margin-bottom: 36px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+#projects .card img {
+    width: 100%;
+}
+
+#projects .card .content {
+    padding: 16px;
+}
+
+/* ==== 3. FOOTER ==== */
+
+footer {
+    padding: 32px;
+    background-color: #e4e4e4;
+    margin-top: 10px;
+}
+footer ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* ==== 4. TYPOGRAPHY ==== */
+.right-arrow {
+    font-size: 1.2em;
+    margin-left: 2px;
+}
+
+/* ==== 5. BUTTONS/ANCHORS ==== */
+a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* ==== MENU ==== */
+#menu-open-button {
+    border: none;
+    background-color: #ffffff4f;
+    padding: 8px 16px;
+    border-radius: 16px;
+    color: #fff;
+}
+#menu {
+    position: absolute;
+    width: 100%;
+}
+
+#menu nav {
+    position: relative;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+    list-style: none;
+    padding: 16px;
+}
+
+#menu ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#menu li {
+    padding: 5px;
+}
+#menu-close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.menu-header {
+    font-size: 1.2rem;
+    margin-top: 0;
+    color: var(--text-secondary);
+}
+/* ==== LISTS ====  */
+.med-categories {
+    margin-bottom: 6px;
+}
+.med-categories ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 36px;
+}
+.med-categories li {
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0px 30px 40px -20px hsl(229, 6%, 66%);
+    background-color: #fff;
+    margin-bottom: 24px;
+    display: flex;
+}
+.category-sort-wrapper {
+    padding: 8px 36px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 8px 0;
+}
+.category-sort {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.accent-bar {
+    width: 4px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: #000;
+}

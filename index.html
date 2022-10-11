@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Matthew Harper | Scientist & Software Developer</title>
+    </head>
+    <body>
+        <div id="menu" hidden>
+            <nav>
+                <h1 class="menu-header">
+                    <a href="/meds" class="menu-link">Projects</a>
+                </h1>
+                <svg
+                    id="menu-close-button"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                >
+                    <title>Close mobile navigation</title>
+                    <path
+                        d="M25.6 14.3a1 1 0 0 1 0 1.4l-4.24 4.25 4.25 4.24a1 1 0 1 1-1.42 1.42l-4.24-4.25-4.24 4.25a1 1 0 0 1-1.42-1.42l4.25-4.24-4.25-4.24a1 1 0 0 1 1.42-1.42l4.24 4.25 4.24-4.25a1 1 0 0 1 1.42 0z"
+                        fill="#8898AA"
+                        fill-rule="evenodd"
+                    ></path>
+                </svg>
+                <ul>
+                    <li><a href="#project1">project1</a></li>
+                    <li><a href="#project1">project1</a></li>
+                    <li><a href="#project1">project1</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="gradient">
+            <header id="header">
+                <button
+                    id="menu-open-button"
+                    aria-expanded="false"
+                    aria-controls="menu"
+                >
+                    <svg width="16" height="10" viewBox="0 0 16 10">
+                        <title>Open mobile navigation</title>
+                        <g fill="#ffffff" fill-rule="evenodd">
+                            <rect y="8" width="16" height="2" rx="1"></rect>
+                            <rect y="4" width="16" height="2" rx="1"></rect>
+                            <rect width="16" height="2" rx="1"></rect>
+                        </g>
+                    </svg>
+                </button>
+            </header>
+            <section id="hero">
+                <h1>Matthew Harper</h1>
+                <p>
+                    Experienced software developer with a passion for building
+                    effective and robust web applications.
+                </p>
+                <div>
+                    <a href="#projects" class="projects-button">
+                        Projects&nbsp;<span class="right-arrow">&rsaquo;</span>
+                    </a>
+                    <a href="#contact" class="contact-button"
+                        >Contact&nbsp;<span class="right-arrow"
+                            >&rsaquo;</span
+                        ></a
+                    >
+                </div>
+            </section>
+        </div>
+        <section id="tech">
+            <h1>Tech</h1>
+            <ul>
+                <li>
+                    <img
+                        src="/img/typescript.svg"
+                        alt="TypeScript Programming Language Logo"
+                    />
+                </li>
+                <li>
+                    <img
+                        src="/img/python.svg"
+                        alt="Python Programming Language Logo"
+                    />
+                </li>
+                <li>
+                    <img
+                        src="/img/csharp.svg"
+                        alt="C Sharp Programming Language Logo"
+                    />
+                </li>
+            </ul>
+        </section>
+        <section id="projects">
+            <h1>Projects</h1>
+            <ul>
+                <li>
+                    <div class="card">
+                        <img src="/img/temp.gif" alt="" />
+                        <div class="content">
+                            <h3>BEA</h3>
+                            <p>
+                                A tool for comparing regional economic growth
+                                between industries. Utilizes API from the U.S.
+                                Bureau of Economic Analysis (BEA)
+                            </p>
+                            <a href="https://bea-demo-site.netlify.app/"
+                                >Live Demo</a
+                            >
+                            <a href="https://github.com/quiltedBread/bea"
+                                >GitHub</a
+                            >
+                            <ul class="tags">
+                                <li>typescript</li>
+                                <li>react</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <script src="index.js"></script>
+    </body>
+</html>
