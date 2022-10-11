@@ -36,8 +36,11 @@ ul {
     margin: 0;
     padding: 0;
 }
-p > a {
+a {
     color: var(--blue);
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
 }
 section {
     padding: 0 36px;
@@ -59,7 +62,7 @@ section {
     background-size: 300%;
     background-image: var(--gradient);
     animation: gradient-animation 7s infinite alternate;
-    padding-bottom: 16px;
+    padding-bottom: 36px;
 }
 
 @keyframes gradient-animation {
@@ -118,8 +121,6 @@ section {
     margin-right: 16px;
 }
 #tech ul {
-    padding: 0;
-    margin: 0;
     display: flex;
     flex-wrap: wrap;
 }
@@ -143,6 +144,23 @@ section {
 #projects .card .content {
     padding: 16px;
 }
+#projects .card a {
+    color: var(--blue);
+    font-weight: 600;
+    margin-right: 16px;
+}
+#projects .card .tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+#projects .card .tags li {
+    background-color: lightgray;
+    border-radius: 16px;
+    padding: 4px 12px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
 
 /* ==== 3. FOOTER ==== */
 
@@ -163,11 +181,6 @@ footer ul {
 }
 
 /* ==== 5. BUTTONS/ANCHORS ==== */
-a {
-    text-decoration: none;
-    font-weight: 600;
-    color: var(--text-primary);
-}
 
 /* ==== MENU ==== */
 #menu-open-button {
@@ -192,56 +205,23 @@ a {
 }
 
 #menu ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    margin-top: 24px;
 }
 
 #menu li {
     padding: 5px;
+    margin-bottom: 16px;
+}
+/* #menu li:last-of-type {
+    margin-bottom: 0;
+} */
+#menu a {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: large;
 }
 #menu-close-button {
     position: absolute;
     top: 5px;
     right: 5px;
-}
-.menu-header {
-    font-size: 1.2rem;
-    margin-top: 0;
-    color: var(--text-secondary);
-}
-/* ==== LISTS ====  */
-.med-categories {
-    margin-bottom: 6px;
-}
-.med-categories ul {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    padding: 0 36px;
-}
-.med-categories li {
-    box-sizing: border-box;
-    width: 100%;
-    border-radius: 4px;
-    box-shadow: 0px 30px 40px -20px hsl(229, 6%, 66%);
-    background-color: #fff;
-    margin-bottom: 24px;
-    display: flex;
-}
-.category-sort-wrapper {
-    padding: 8px 36px;
-    width: 100%;
-    box-sizing: border-box;
-    margin: 8px 0;
-}
-.category-sort {
-    border: none;
-    outline: none;
-    background-color: transparent;
-}
-
-.accent-bar {
-    width: 4px;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    background-color: #000;
 }
