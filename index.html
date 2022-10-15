@@ -32,12 +32,17 @@
                 <ul>
                     <li><a href="#tech">Tech</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#footer">Contact</a></li>
                 </ul>
             </nav>
         </div>
         <div class="gradient">
             <header id="header">
+                <ul id="desktop-menu">
+                    <a href="#tech"><li>Tech</li></a>
+                    <a href="#projects"><li>Projects</li></a>
+                    <a href="#footer"><li>Contact</li></a>
+                </ul>
                 <button
                     id="menu-open-button"
                     aria-expanded="false"
@@ -63,7 +68,7 @@
                     <a href="#projects" class="projects-button">
                         Projects&nbsp;<span class="right-arrow">&rsaquo;</span>
                     </a>
-                    <a href="#contact" class="contact-button"
+                    <a href="#footer" class="contact-button"
                         >Contact&nbsp;<span class="right-arrow"
                             >&rsaquo;</span
                         ></a
@@ -71,58 +76,179 @@
                 </div>
             </section>
         </div>
-        <section id="tech">
-            <h1>Tech</h1>
-            <ul>
-                <li>
-                    <img
-                        src="/img/typescript.svg"
-                        alt="TypeScript Programming Language Logo"
-                    />
-                </li>
-                <li>
-                    <img
-                        src="/img/python.svg"
-                        alt="Python Programming Language Logo"
-                    />
-                </li>
-                <li>
-                    <img
-                        src="/img/csharp.svg"
-                        alt="C Sharp Programming Language Logo"
-                    />
-                </li>
-            </ul>
-        </section>
-        <section id="projects">
-            <h1>Projects</h1>
-            <ul>
-                <li>
-                    <div class="card">
-                        <img src="/img/temp.gif" alt="" />
-                        <div class="content">
-                            <h3>BEA</h3>
-                            <p>
-                                A tool for comparing regional economic growth
-                                between industries. Utilizes APIs from the U.S.
-                                Bureau of Economic Analysis (BEA)
-                            </p>
-                            <ul class="tags">
-                                <li>TypeScript</li>
-                                <li>React</li>
-                                <li>MaterialUI</li>
-                            </ul>
-                            <a href="https://bea-demo-site.netlify.app/"
-                                >Live Demo</a
-                            >
-                            <a href="https://github.com/quiltedBread/bea"
-                                >GitHub</a
-                            >
+        <main>
+            <section id="tech">
+                <h1>Tech</h1>
+                <ul>
+                    <li>
+                        <img
+                            src="/img/typescript.svg"
+                            alt="TypeScript Programming Language Logo"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="/img/python.svg"
+                            alt="Python Programming Language Logo"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="/img/csharp.svg"
+                            alt="C Sharp Programming Language Logo"
+                        />
+                    </li>
+                    <li>
+                        <img src="/img/react.svg" alt="React Library Logo" />
+                    </li>
+                    <li>
+                        <img src="/img/django.svg" alt="Django Web Framework" />
+                    </li>
+                    <li>
+                        <img
+                            src="/img/postgres.svg"
+                            alt="PostgreSQL SQL Server"
+                        />
+                    </li>
+                </ul>
+            </section>
+            <section id="projects">
+                <h1>Projects</h1>
+                <ul>
+                    <li>
+                        <div class="card">
+                            <div class="img-container">
+                                <img src="/img/temp.gif" alt="" />
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="content">
+                                <div>
+                                    <h3>GeneBrains</h3>
+                                    <p>
+                                        A site built to simplify personal
+                                        genetics. The project transforms
+                                        pharmacogenetic data from
+                                        <a
+                                            href="https://cpicpgx.org/"
+                                            target="_blank"
+                                            style="margin: 0"
+                                            >CPIC</a
+                                        >
+                                        into concise, clinical predictions based
+                                        on ethnicity.
+                                    </p>
+                                    <ul class="tags">
+                                        <li>Python</li>
+                                        <li>Django</li>
+                                        <li>PostgreSQL</li>
+                                        <li>AWS</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <a
+                                        href="https://github.com/quiltedBread/genebrains_django"
+                                        >GitHub</a
+                                    >
+                                    <a
+                                        href="#"
+                                        style="color: red; font-weight: 600"
+                                        >NOT LIVE</a
+                                    >
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="img-container">
+                                <img src="/img/bea-demo.gif" alt="" />
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="content">
+                                <div>
+                                    <h3>BEA</h3>
+                                    <p>
+                                        A tool for comparing regional economic
+                                        growth between industries. Utilizes APIs
+                                        from the U.S. Bureau of Economic
+                                        Analysis (BEA)
+                                    </p>
+                                    <ul class="tags">
+                                        <li>TypeScript</li>
+                                        <li>React</li>
+                                        <li>MaterialUI</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <a
+                                        href="https://github.com/quiltedBread/bea"
+                                        >GitHub</a
+                                    >
+                                    <a href="https://bea-demo-site.netlify.app/"
+                                        >Live Demo</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="img-container">
+                                <img src="/img/temp.gif" alt="" />
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="content">
+                                <div>
+                                    <h3>Portfolio</h3>
+                                    <p>
+                                        The site you're on! It's lighning fast
+                                        because it's stupid simple. Bundle size
+                                        of &lt;500B un-minified.
+                                    </p>
+                                    <ul class="tags">
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>JS</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <a
+                                        href="https://github.com/quiltedBread/portfolio"
+                                        >GitHub</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer id="footer">
+            <ul>
+                <li>
+                    <a href="https://github.com/quiltedBread" target="_blank"
+                        ><img src="/img/github.svg" alt="Github Logo"
+                    /></a>
+                </li>
+                <li>
+                    <a
+                        href="https://www.linkedin.com/in/matthew-w-harper"
+                        target="_blank"
+                        ><img src="/img/linkedin.svg" alt="LinkedIn Logo"
+                    /></a>
+                </li>
+                <li>
+                    <a href="mailto:mattharperdev@gmail.com" target="_blank"
+                        ><img src="/img/gmail.svg" alt="Gmail Logo"
+                    /></a>
                 </li>
             </ul>
-        </section>
+            <div class="email">
+                <a href="mailto:mattharperdev@gmail.com"
+                    >mattharperdev@gmail.com</a
+                >
+            </div>
+        </footer>
         <script src="index.js"></script>
     </body>
 </html>
